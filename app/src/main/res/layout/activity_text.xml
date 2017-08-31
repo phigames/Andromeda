@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.netii.phi.andromeda.TextActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="none"
+            android:gravity="top"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/colorPrimary">
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/ic_drag_handle_white_24dp"
+            android:foregroundGravity="center" />
+
+        <Button
+            android:id="@+id/button_divider_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/ic_arrow_back_white_24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_research"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--TextView
+            android:id="@+id/textView_research"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click a word to research" /-->
+
+    </RelativeLayout>
+
+</LinearLayout>

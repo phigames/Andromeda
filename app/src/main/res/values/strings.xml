@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Andromeda</string>
+    <string name="works_list_title">Library</string>
+    <string name="menu_item_update_title">Update</string>
+</resources>

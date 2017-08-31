@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/analyses_list_item_height"
+    android:layout_gravity="right">
+
+    <TextView
+        android:id="@+id/textView_analyses_list_item_firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:text="asdf"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/textView_analyses_list_item_firstLine"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/textView_analyses_list_item_firstLine"
+        android:layout_toRightOf="@+id/textView_analyses_list_item_firstLine"
+        android:requiresFadingEdge="horizontal"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/textView_analyses_list_item_secondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="asdf"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </HorizontalScrollView>
+
+</RelativeLayout>
